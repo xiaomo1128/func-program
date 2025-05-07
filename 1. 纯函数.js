@@ -1,7 +1,7 @@
 /**
  * 纯函数 可缓存 可测试
  * 相同参数会产生相同输出
- * 
+ *
  */
 
 let _ = require("lodash");
@@ -26,3 +26,5 @@ const memorizeAdd = memorize(add, resolver);
 console.log(memorizeAdd(1, 2)); // 执行计算
 console.log(memorizeAdd(1, 2)); // 不执行计算
 console.log(memorizeAdd(4, 1)); // 执行计算
+
+module.exports = add;
